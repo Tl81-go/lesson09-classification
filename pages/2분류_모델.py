@@ -415,7 +415,7 @@ grid_df = pd.DataFrame(
 
 
 # 의사결정트리 판단 영역을 옅게 표시
-tree_grid = tree_model.predict(grid_df).to_numpy().reshape(
+tree_grid = tree_model.predict(grid_df).reshape(
     len(y_grid), len(x_grid)
 )
 
